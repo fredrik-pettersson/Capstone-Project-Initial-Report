@@ -21,6 +21,12 @@ Also, I would like to explore whether it is possible to create a machine learnin
 The data used for this study is the the Kaggle ATP Matches dataset that contains details about all the ATP tennis matches played since 1968 with detailed match statistics available for matches since 1991 ATP matches (available at https://www.kaggle.com/datasets/sijovm/atpdata/data).
 ## Methodology
 The methods I use for answering my questions include common data science practices and visualization techniques using Python programming and Panda dataframe manipulations as well as common machine learning models such as Logistic Regression, K-Nearest Neighbors, Decision Tree Classifiers, Support Vector Machines, and the GridSearchCV function to optimize the choice of hypermodel parameters to get the best prediction performance. 
+
+The following 35 numerical features and the target feature 'winner' were developed from the original ATP match dataset:
+
+
+![image](https://github.com/fredrik-pettersson/Capstone-Project-Initial-Report/assets/146313002/53d25a96-98d8-4b5e-b954-d7f515772a78)
+
 ## Results
 I found that the strongest predictors that differentiate winners from losers include 1) Number of breakpoints lost while serving as a percentage of total serve points (on average 2.8% vs 3.7% for winners and losers, respectively), and 2) Number of first serves that resulted in a winning point as a percentage of total serve points (on average 46% vs 43% for winners and losers, respectively), based on a total of 1105 five-set matches played between 2010 and 2022 (see charts below with winning player on x-axis and losing player on y-axis):
 ![bpLostPerct](https://github.com/fredrik-pettersson/Capstone-Project-Initial-Report/assets/146313002/73641c7b-b874-44f6-87d4-247b3203f330)
